@@ -31,12 +31,11 @@ This project is a web-based application that predicts the likelihood of anemia b
 - **MCHC**
 - **MCV**
 
-## 🚀 How to Run the App
+##  How to Run the App
 
 1. link https://anemiapredictionfromcbcreport.onrender.com
 
 2. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/anemia-prediction.git
-   cd anemia-prediction
+   git clone https://github.com/Yeasin-Hossen-Arman/AnemiaPredictionFromCBCreport.git
