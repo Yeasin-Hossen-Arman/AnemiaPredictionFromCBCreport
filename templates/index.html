@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CBC</title>
   <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  rel="stylesheet"/>
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"/>
   <style>
     * {
       box-sizing: border-box;
@@ -13,62 +14,65 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
+      background: #121212;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       flex-direction: column;
+      min-height: 100vh;
+      color: #e0e0e0;
     }
 
     .container {
-      background: white;
-      max-width: 400px;
-      width: 100%;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      background: #1e1e2f;
+      width: 90%;
+      max-width: 450px;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
       text-align: center;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
 
     h1 {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       font-weight: 700;
-      color: #333;
+      color: #ffffff;
+      font-size: 1.6rem;
     }
 
     p.project-description {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 30px;
-      line-height: 1.4;
+      font-size: 0.95rem;
+      color: #cfd8dc;
+      margin-bottom: 25px;
+      line-height: 1.5;
     }
 
     form input[type="number"] {
       width: 100%;
       padding: 12px 15px;
       margin: 10px 0;
-      border: 1.5px solid #ddd;
+      border: 1.5px solid #444;
       border-radius: 6px;
-      font-size: 16px;
-      transition: border-color 0.3s;
+      font-size: 1rem;
+      background-color: #2a2a3b;
+      color: #ffffff;
     }
 
     form input[type="number"]:focus {
-      border-color: #3f51b5;
+      border-color: #90caf9;
       outline: none;
     }
 
     button {
-      margin-top: 20px;
+      margin-top: 15px;
       width: 100%;
-      background-color: #3f51b5;
+      background-color: #3949ab;
       color: white;
       padding: 14px;
-      font-size: 18px;
+      font-size: 1rem;
       border: none;
       border-radius: 6px;
       cursor: pointer;
@@ -81,122 +85,97 @@
     }
 
     .result {
-      margin-top: 30px;
+      margin-top: 25px;
       padding: 15px;
-      background-color: #e8f0fe;
+      background-color: #263238;
       border-radius: 8px;
-      color: #1a237e;
+      color: #81d4fa;
       font-weight: 600;
-      font-size: 20px;
-      box-shadow: 0 4px 8px rgba(63, 81, 181, 0.15);
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
     }
 
-    /* Footer Base */
-  footer {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: #cfd8dc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 40px 20px 20px;
-    box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
-  }
-
-  .footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .about-me, .social-links {
-    flex: 1 1 400px;
-  }
-
-  /* Titles */
-  .about-me h3, .social-links h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #ffffff;
-    letter-spacing: 0.05em;
-  }
-
-  /* About me paragraph */
-  .about-me p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #b0bec5;
-  }
-
-  /* Social links container */
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  /* Individual links */
-  .footer-link {
-    font-size: 1.3rem;
-    color: #90a4ae;
-    text-decoration: none;
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-
-  .footer-link i {
-    margin-right: 12px;
-    font-size: 1.5rem;
-    color: #90a4ae;
-    transition: color 0.3s ease;
-  }
-
-  /* Hover effects */
-  .footer-link:hover {
-    color: #ffd740;
-    transform: translateX(6px);
-  }
-  .footer-link:hover i {
-    color: #ffca28;
-  }
-
-  /* Footer bottom text */
-  .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.95rem;
-    color: #607d8b;
-    letter-spacing: 0.05em;
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .about-me, .social-links {
-      flex: none;
+    footer {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #cfd8dc;
       width: 100%;
-      margin-bottom: 30px;
+      padding: 30px 15px;
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.4);
     }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .about-me, .social-links {
+      flex: 1 1 100%;
+    }
+
+    .about-me h3, .social-links h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .about-me p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #b0bec5;
+    }
+
     .footer-link {
-      justify-content: center;
+      font-size: 1rem;
+      color: #90a4ae;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
-  }
+
+    .footer-link i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: #90a4ae;
+    }
+
+    .footer-link:hover {
+      color: #ffd740;
+      transform: translateX(5px);
+    }
+
+    .footer-link:hover i {
+      color: #ffca28;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #607d8b;
+    }
+
+    @media (min-width: 600px) {
+      .about-me, .social-links {
+        flex: 1 1 45%;
+      }
+    }
   </style>
 </head>
 <body>
+
   <div class="container">
     <h1>Anemia Prediction from CBC Reports</h1>
     <p class="project-description">
-      This web application predicts the likelihood of anemia based on Complete Blood Count (CBC) report parameters using a trained Logistic Regression model. 
+      This web application predicts the likelihood of anemia based on Complete Blood Count (CBC) report parameters using a trained Logistic Regression model.
       Users can input their lab values or upload reports (feature coming soon) for quick assessment.
     </p>
+
     <form method="POST">
       <input type="number" name="Gender" placeholder="Enter your gender (0 = Female, 1 = Male)" step="any" required />
       <input type="number" name="Haemoglobin" placeholder="Enter your Haemoglobin value" step="any" required />
@@ -216,38 +195,35 @@
     {% endif %}
   </div>
 
-
   <footer>
-  <div class="footer-container">
-    <div class="about-me">
-      <h3>About Me</h3>
-      <p>
-        Hi, I'm <strong>Yeasin Hossen Arman</strong>, a passionate web and machine learning developer.<br>
-        I specialize in building intelligent applications that solve real-world problems with elegant solutions.
-      </p>
+    <div class="footer-container">
+      <div class="about-me">
+        <h3>About Me</h3>
+        <p>
+          Hi, I'm <strong>Yeasin Hossen Arman</strong>, a passionate Web and Machine Learning Developer.<br>
+          I love crafting smart digital tools that make life easier and healthcare more accessible.
+        </p>
+      </div>
+      <div class="social-links">
+        <h3>Connect with me</h3>
+        <a href="https://your-portfolio-link.com" class="footer-link" target="_blank">
+          <i class="fas fa-globe"></i> Portfolio
+        </a>
+        <a href="https://github.com/your-github-username" class="footer-link" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin-username" class="footer-link" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://facebook.com/your-facebook-profile" class="footer-link" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+      </div>
     </div>
-    <div class="social-links">
-      <h3>Connect with me</h3>
-      <a href="https://your-portfolio-link.com" target="_blank" rel="noopener noreferrer" class="footer-link">
-        <i class="fas fa-globe"></i> Portfolio
-      </a>
-      <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" class="footer-link">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" class="footer-link">
-      <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-
-      <a href="https://facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer" class="footer-link">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
+    <div class="footer-bottom">
+      &copy; 2025 Yeasin Hossen Arman. All rights reserved.
     </div>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2025 Yeasin Hossen Arman. All rights reserved.
-  </div>
-</footer>
+  </footer>
 
-  
 </body>
 </html>
