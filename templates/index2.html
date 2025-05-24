@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anemia Detection</title>
+</head>
+<body>
+    <h2>Anemia Prediction System</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br><br>
+
+        <label>Hemoglobin:</label>
+        <input type="number" step="any" name="hemoglobin"><br>
+
+        <label>MCH:</label>
+        <input type="number" step="any" name="mch"><br>
+
+        <label>MCHC:</label>
+        <input type="number" step="any" name="mchc"><br>
+
+        <label>MCV:</label>
+        <input type="number" step="any" name="mcv"><br><br>
+
+        <strong>OR Upload PDF File:</strong><br>
+        <input type="file" name="pdf_file" accept=".pdf"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
