@@ -1,5 +1,4 @@
-# AnemiaPredictionFromCBCreport
-# Anemia Prediction from CBC Reports
+# Anemia Detection 
 
 This project is a web-based application that predicts the likelihood of anemia based on Gender,
     Haemoglobin,
@@ -20,7 +19,6 @@ This project is a web-based application that predicts the likelihood of anemia b
 - **Flask** (Backend Web Framework)
 - **Scikit-learn** (Machine Learning Model)
 - **Pandas** (Data Processing)
-- **Tesseract OCR** (Text Extraction from Images)
 - **HTML5 & CSS3** (Frontend UI)
 
 ##  Inputs Accepted
